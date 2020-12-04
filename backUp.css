@@ -1,0 +1,177 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Century Gothic";
+    text-decoration: none;
+}
+
+.coverbody{
+    background-image: url('../img/desk.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coverbody:after{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    }
+
+.card{
+    /* width: 400px; */
+    width:50%;
+    height: 50vh;
+     position: absolute;
+    background: #f1f1f1;
+     /* overflow: hidden; */
+    box-shadow: 0px 0px 20px #000000b3;
+    border-radius: 10px;
+    z-index: 5;
+}
+/* .card{
+    width: 400px;
+     position: absolute;
+    
+    background: #f1f1f1;
+   
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #000000b3;
+    border-radius: 10px;
+    z-index: 5;
+} */
+
+.card-header{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.card-header img{
+    height: 100%;
+}
+.card-header .cover{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+
+}
+.card-header .menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    /* opacity: 0.7; */
+     cursor: pointer;
+}
+.card-header .menu span{
+    font-size: 32px;
+}
+.card-header .menu ul{
+    background: #333333b3;
+    padding: 6px 0;
+    margin: 0 14px;
+    border-radius: 7px;
+    
+}
+.card-header .menu ul li{
+    float: left;
+    width: 30px;
+    text-align: center;
+    list-style: none;
+    display: none;
+    transition: 0.2s all;
+}
+.card-header .menu:hover ul li{
+        display: block;
+}
+
+.card-header .name{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    /* opacity: 0.7; */
+}
+.card-header .last{
+    /* display: block; */
+    font-size: 26px;
+}
+.card-header .first{
+    display: block;
+    font-size: 36px;
+}
+
+.container{
+    padding: 20px;
+    overflow: hidden;
+}
+.left-section{
+    width: 260px;
+    overflow: hidden;
+    float: left;
+}
+.left-section h3{
+    color: #8e44ad;
+}
+.left-section p{
+    margin: 30px 0;
+}
+.left-section .followbtn{
+    font-weight: bold;
+    width: 100%;
+    background: #8e44ad;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 8px 0;
+    transition: 0.2s all;
+}
+.left-section .followbtn:hover{
+        background: #9b59b6;
+}
+.right-section{
+    overflow: hidden;
+    float: right;
+    text-align: right;
+}
+.item{
+    margin: 6px 0;
+}
+.num{
+    display: block;
+    font-size: 13px;
+}
+.word{
+    font-size: 16px;
+}
+
+@media(max-width:560px){
+    .card{
+        height: 100vh;
+        width: 100%;
+    }
+    .card-header img{
+        height: 100%;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        padding: 20px;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+   
+}
