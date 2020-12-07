@@ -74,14 +74,13 @@ a{
 
 }
 
-
 /* LEFT INFO */
 .left_info{
     border-right: 3px solid#138496;
     /* position: sticky;
     left:0; */
     color: #848D95;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     padding: 0rem 1rem;
     width: 12rem;
@@ -97,7 +96,13 @@ a{
 .left_info_detail a{
     text-decoration: none;
     color: #848D95;
-
+}
+.form_check{
+    width: 100%;
+}
+.answer_check{
+    width: 100%;
+    /* font-size: smaller; */
 }
 
 /* RIGHT INFO */
@@ -105,6 +110,8 @@ a{
     padding: 5px;
     width: 100%;
     margin: 0;
+    margin-bottom: 2rem;
+
 }
 .right_info_top{
     /* border: 3px solid black; */
@@ -128,6 +135,7 @@ a{
     margin: auto auto;
     max-width: 40rem;
 }
+
 .counter{
     color: #848DAD;
     display: flex;
@@ -177,9 +185,33 @@ a{
     width: 100%;
     font-size: smaller;
     color: #848DAD;
-
 }
 
+/* ANSWERS */
+.question_description{
+    color: #6c757d;
+}
+.comments_title{
+    padding-top: 1.5rem;
+    color: #007bff;
+}
+
+.form{
+    padding-bottom: 2rem;
+}
+
+/* QUESTIONS */
+.form_questions{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.form_questions label{
+    font-weight: 700;
+}
+.form_questions p{
+    font-size: smaller;
+    color:#848D95 ;
+}
 /* FOOTER */
 .footer {
     background-color: #242729;
@@ -203,4 +235,25 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* SIGHUP */
+  .signup button a{
+      text-decoration: none;
+  }
+  .signup{
+    margin: auto auto;
+    max-width: 20rem;
+    padding: 3rem 1rem; 
+    border: 2px solid #138496; 
+    border-radius: 10px;
+  }
+  .signup label{
+    font-weight: 700;
+  }
+  .signup .title{
+    text-align: center;
+  }
+  .signup .title label{
+    font-size: larger;
   }
